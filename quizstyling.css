@@ -64,6 +64,7 @@ background-position:left;
 background-repeat:no-repeat;
 padding-left:37px;
 cursor:pointer;
+font-weight:bold;
 }
 form.checkmark #radio_question_answers li.answer label{
 background-image:url(images/unchecked.jpg);
@@ -158,8 +159,11 @@ font-weight: bold;
 	width:inherit;
 }
 .checkmark #radio_question_answers ul.images li.answer ul li label{
-display:inline;
 margin-top:0;
+}
+.checkmark #radio_question_answers ul.images li.answer ul li label span{
+	margin-top:0;
+	display:inline;
 }
 .checkmark #radio_question_answers ul.images li.answer ul li{
 padding:0;
@@ -397,9 +401,32 @@ margin-bottom:37px;
 margin-top:34px;
 }
 p.hint{
-font-size:26px;	
+font-size:26px;
+margin-bottom:100px;
 }
 
+form.checkmark #radio_question_answers ul.images {
+text-align: left;
+width:100%;
+max-width:100%;
+margin-bottom: 165px;
+}
+
+form.checkmark #radio_question_answers li.answer, form.checkmark #radio_question_answers li.answer ul li{
+width:100%;
+display:block;
+margin-bottom:24px;
+font-size:26px;
+color:#252525;
+text-transform:none;
+border:none;
+text-align:left;
+line-height: 28px;
+height:31px;
+}
+form.checkmark #radio_question_answers li.answer label {
+margin-bottom:24px;
+}
 /* quiz review MOBILE*/
 h3.questioncategory{
 font-weight:bold;
