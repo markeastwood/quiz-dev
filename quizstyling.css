@@ -1,18 +1,75 @@
 @charset "utf-8";
 /* CSS Document */
 
-#save_quiz_answer, body{
+#save_quiz_answer, body.quizteting, #collegematchingcontent{
 max-width:1024px;
 background-color:white;
 margin:0 auto;
 sizing:box-sizing;
 }
 
-body{
+body.quiztesting, #collegematchingcontent{
 background-color:#e9ecee;	
 font-family: 'Avenir Next W01', Helvetica, Arial, sans-serif;
 padding:27px;
 }
+#collegematchingwizard{
+background-color:#e9ecee;	
+}
+#collegematchingmenu{
+width:100%;
+background-color:#f4f2ea;
+height:102px;
+}
+#collegematchingbutton{
+position:absolute;
+top:30px;
+left:18px;
+padding-left:60px;
+height:45px;
+line-height:45px;
+font-size:20px;
+font-weight:bold;
+background-image:url(images/STEPSicon.png);
+background-position:left;
+background-repeat:no-repeat;
+}
+#collegematchingcontainer{
+max-width:1024px;
+margin:0 auto;
+position:relative;
+}
+#collegematchingmatches{
+position:absolute;
+width:142px;
+height:84px;
+right:25px;
+top:9px;
+text-align:center;
+background-color:#546c81;
+color:white;
+font-size:16px;
+padding-top:4px;
+border-radius:4px;
+}
+span.matchesnumber{
+font-family: "Museo Slab CE", helvetica, arial, sans-serif;
+font-size:32px;
+line-height:35px;
+font-weight:bold;
+clear:both;
+width:142px;
+text-align:center;
+display:block;
+height:32px;
+}
+#collegematchingcontent{
+width:1024px;
+margin:0 auto;
+background-color:white;
+padding-top:50px;
+}
+
 
 #save_quiz_answer h2, html body h2{
 font-size:34px;
@@ -26,6 +83,10 @@ font-weight:bold;
 	color:#485f74;
 	font-size:22px;
 	text-align:center;
+}
+
+p.submit button{
+text-transform:uppercase !important;	
 }
 
 /*  ALTERNATE STYLING FOR CHECKMARK STYLE */
@@ -365,6 +426,21 @@ margin-right:0px;
 /* quiz review end */
 
 @media (max-width: 640px){
+form.checkmark #radio_question_answers li.answer.active label{
+background-image:url(images/checkedmobile.jpg);
+padding-left:81px;
+}
+form.checkmark #radio_question_answers li.answer label{
+background-image:url(images/uncheckedmobile.jpg);
+padding-left:81px;
+}
+
+.checkmark #radio_question_answers ul.images li.answer ul li {
+margin-bottom: 24px;
+float:none;
+display:block;
+}
+
 body{padding:10px;}
 
 #save_quiz_answer p.submit button, #get_next_question a {
@@ -422,10 +498,10 @@ text-transform:none;
 border:none;
 text-align:left;
 line-height: 28px;
-height:31px;
 }
 form.checkmark #radio_question_answers li.answer label {
-margin-bottom:24px;
+height: 54px;
+line-height: 49px;
 }
 /* quiz review MOBILE*/
 h3.questioncategory{
