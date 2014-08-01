@@ -90,6 +90,7 @@ p.submit button{
 text-transform:uppercase !important;	
 }
 
+
 /*  ALTERNATE STYLING FOR CHECKMARK STYLE */
 
 
@@ -109,19 +110,16 @@ cursor:pointer;
 outline: none;
 border-radius:0;
 padding:0;	
-background-image:url(images/unchecked.jpg);
+background-image:url(images/uncheckeddesktop.jpg);
 background-position:left;
 background-repeat:no-repeat;
 border:0;
 }
 form.checkmark #radio_question_answers li.answer.active input span, form #radio_question_answers li.answer.active input[type='checkbox'] span {
-background-image:url(images/checked.png);
-background-position:left middle;
-background-repeat:no-repeat;
 display:none;
 }
 form.checkmark #radio_question_answers li.answer.active label{
-background-image:url(images/checked.jpg);
+background-image:url(images/checkeddesktop.jpg);
 background-position:left;
 background-repeat:no-repeat;
 padding-left:37px;
@@ -129,15 +127,23 @@ cursor:pointer;
 font-weight:bold;
 }
 form.checkmark #radio_question_answers li.answer label{
-background-image:url(images/unchecked.jpg);
+background-image:url(images/uncheckeddesktop.jpg);
 background-position:left;
 background-repeat:no-repeat;
 padding-left:37px;
 cursor:pointer;
 }
+
+form.checkmark.radio #radio_question_answers li.answer.active label{
+background-image:url(images/radiochecked.jpg);	
+}
+
+form.checkmark.radio #radio_question_answers li.answer label{
+background-image:url(images/radiounchecked.jpg);	
+}
 form.checkmark #radio_question_answers li.answer input[type='checkbox']:checked + label span{
 padding:0;	
-background-image:url(images/checked.jpg);
+background-image:url(images/checkeddesktop.jpg);
 background-position:left;
 background-repeat:no-repeat;
 border:0;
@@ -161,7 +167,7 @@ text-transform:none;
 border:none;
 text-align:left;
 line-height: 28px;
-height:31px;
+height:43px !important;
 }
 
 form.checkmark #radio_question_answers li.answer label{
@@ -296,7 +302,7 @@ color: #ffffff;
 background-color: #d54100;
 border-color: #d54100;	
 display: inline-block;
-padding: 6px 12px;
+padding: 11px 44px;
 margin-bottom: 0;
 font-size: 14px;
 font-weight: normal;
@@ -427,6 +433,31 @@ margin-right:0px;
 /* quiz review end */
 
 @media (max-width: 640px){
+form #radio_question_answers ul.images li.answer ul li label img {
+width: 196px;
+height: auto;
+cursor: pointer;
+}
+h2{
+padding:0 15px;	
+}
+#radio_question_answers ul.images li.answer ul li {
+display: inline-block;
+margin: 4px 15px;
+border: 5px solid #ffffff;
+width: 278px;
+height: inherit;
+padding: 23px;
+vertical-align: top;
+cursor: pointer !important;
+}
+body.quiztesting{
+padding:0;	
+}
+
+form.checkmark #radio_question_answers li.answer, form.checkmark #radio_question_answers li.answer ul li {
+height: inherit !important;
+}
 form.checkmark #radio_question_answers li.answer.active label{
 background-image:url(images/checkedmobile.jpg);
 padding-left:81px;
@@ -435,15 +466,27 @@ form.checkmark #radio_question_answers li.answer label{
 background-image:url(images/uncheckedmobile.jpg);
 padding-left:81px;
 }
+form.checkmark.radio #radio_question_answers li.answer.active label{
+background-image:url(images/radiocheckedmobile.jpg);	
+}
+
+form.checkmark.radio #radio_question_answers li.answer label{
+background-image:url(images/radiouncheckedmobile.jpg);	
+}
+form.checkmark #radio_question_answers{
+margin:0 27px !important;	
+}
 
 .checkmark #radio_question_answers ul.images li.answer ul li {
 margin-bottom: 24px;
 float:none;
 display:block;
 }
-
+.radio, .checkbox {
+padding-left: inherit !important;
+}
 body{padding:10px;}
-
+h3.questioncategory, .questioncategorycontainer{margin-left:27px;}
 #save_quiz_answer p.submit button, #get_next_question a {
 color: #ffffff;
 background-color: #d54100;
@@ -503,6 +546,7 @@ line-height: 28px;
 form.checkmark #radio_question_answers li.answer label {
 height: 54px;
 line-height: 49px;
+display:block;
 }
 /* quiz review MOBILE*/
 h3.questioncategory{
