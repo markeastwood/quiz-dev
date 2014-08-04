@@ -26,4 +26,4 @@ $("#save_quiz_answer li.answer ul li label").has("input[type=checkbox]").click(f
 
 
 
-$("p.progress span span").addClass("questionsleft").insertBefore("p.progress");
+//$("p.progress span span").addClass("questionsleft").insertBefore("p.progress");

@@ -394,7 +394,7 @@ background-color: #dfdbd8;
 }
 p.progress span span{
 position:absolute;
-display:block;
+display:none !important;
 top:-24px;
 margin-top:none !important;
 height:inherit;
